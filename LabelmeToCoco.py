@@ -4,9 +4,10 @@ import numpy as np
 import PIL.Image
 from PIL import Image, ImageDraw
 
-path="E:/mission_vision/train/ann"
+path="path/to/all/annotation_files" #this is path to your all annotation file(.json)
 img_id=1
 data_dict=[]
+
 def polygons_to_mask(img_shape, polygons):
         mask = np.zeros(img_shape, dtype=np.uint8)
         mask = PIL.Image.fromarray(mask)
